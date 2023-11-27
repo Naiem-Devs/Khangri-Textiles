@@ -1,0 +1,1617 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+*{
+    font-family: 'Lora';
+    font-weight: 600;
+}
+
+.hamburger{
+    width: fit-content;
+    float: right;
+    margin-top: 1.85em;
+    right: 5%;
+    z-index: 6;
+    position: fixed;
+}
+
+.hamburger .line{
+    width: 2em;
+    height: 2px;
+    background-color: white;
+    display: block;
+    margin: 0.5em auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover{
+    cursor: pointer;
+}
+
+#hamburger-1.is-active .line:nth-child(2){
+    opacity: 0;
+}
+  
+#hamburger-1.is-active .line:nth-child(1){
+    -webkit-transform: translateY(9px) rotate(45deg);
+    -ms-transform: translateY(9px) rotate(45deg);
+    -o-transform: translateY(9px) rotate(45deg);
+    transform: translateY(9px) rotate(45deg);
+}
+
+#hamburger-1.is-active .line:nth-child(3){
+    -webkit-transform: translateY(-11px) rotate(-45deg);
+    -ms-transform: translateY(-11px) rotate(-45deg);
+    -o-transform: translateY(-11px) rotate(-45deg);
+    transform: translateY(-11px) rotate(-45deg);
+}
+
+
+img{
+    width: 100%;
+    display: block;
+}
+
+header{  
+    width: 100%;
+    height: 38em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    position: relative;
+}
+
+header h1{
+    color: white;
+    text-align: center;
+    font-size: 1.825em;
+    line-height: 1.5em;
+    font-weight: 100;
+    clear: both;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 12em;
+}
+
+header img {
+    width: 12em;
+    margin-left: 5%;
+    padding-top: 1em;
+    float: left;
+}
+
+main{
+    z-index: 1;
+    position: relative;
+}
+
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: -2em auto;
+}
+
+.services div{
+    flex: 0 50%;
+    flex: 0 45%;
+    margin: 2.5%;
+    text-align: center;
+}
+
+.services div h3{
+    margin-top: 1em;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    letter-spacing: 0.04em;
+    color: #15294a;
+}
+
+main h2{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 0.04em;
+    color: #999999;
+}
+
+main p{
+    font-weight: 100;
+    font-size: 0.8em;
+    line-height: 1.6em;
+}
+
+main .process, main .experience{
+    width: 90%;
+    margin: 0 auto 5em;
+}
+
+main .process{
+    margin: 6em auto 5em;
+}
+
+main .process h2{
+    text-align: center;
+    margin-bottom: 1.75em;
+}
+
+main .process p{
+    text-align: center;
+    line-height: 1.7em;
+    font-size: 1.1em;
+    font-weight: 100;
+    color: #c69210;
+    max-width: 26em;
+    margin: auto;
+}
+
+.showCase1 {
+    position: relative;
+    overflow: auto;
+    margin-bottom: 3em;
+}
+
+.showCase1 img:nth-child(1){
+    position: absolute;
+    left: 0;
+    width: 45%;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.showCase1 img:nth-child(2){
+    width: 70%;
+    float: right;
+}
+
+.experience h2{
+    margin-bottom: 1.5em;
+}
+
+.showCase2{ 
+    width: 100%;
+    height: 60vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 65%;
+    position: relative;
+    margin-top: 8em;
+}
+
+.showCase2 img{
+    width: 10em;
+    margin-left: 5%;
+    position: absolute;
+    top: -3em;
+}
+
+.quality {
+    margin: 5em auto;
+    width: 90%;
+}
+
+.quality h2{
+    text-align: center;
+    margin-bottom: 1.75em;
+}
+
+.quality .iconContainer{
+    display: flex;
+    max-width: 21em;
+    margin: 0 auto;
+}
+
+.quality .iconContainer img{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.quality .qualityTextContainer .textBlocks svg{
+    display: none;
+} 
+.qualityTextContainer .standardsContainer{
+    display: block;
+}
+
+.quality h3{
+    font-size: 0.9em;
+    font-weight: 900;
+    color: #c69210;
+    margin: 1.5em 0 1em;
+}
+
+.showCase3{ 
+    width: 100%;
+    height: 60vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 65%;
+    position: relative;
+    margin-top: 6em;
+}
+
+.showCase3 img{
+    width: 10em;
+    position: absolute;
+    bottom: -5em;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.howItWorks{
+    width: 90%;
+    margin: 9em auto 5em;
+}
+
+.howItWorks h2{
+    margin-bottom: 1.75em;
+}
+
+.howItWorks .steps{
+    display: flex;
+    margin-bottom: 1.5em;
+}
+
+.howItWorks .steps .step{
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-right: 1em;
+    min-width: 1.25em;
+    color: #c69210;
+    line-height: 1.2em;
+}
+
+.howItWorks .steps .step:last-child{
+    margin-bottom: 0;
+}
+
+.showCase4{
+    position: relative;
+    margin: 8em 0 5em;
+}
+
+.showCase4 img:nth-child(1){
+    width: 80%;
+}
+
+.showCase4 img:nth-child(2){
+    position: absolute;
+    width: 10em;
+    top: -3em;
+    right: 0;
+}
+
+.materialsContainer{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.materialsContainer h2{
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.goldColor {
+    filter: invert(61%) sepia(97%) saturate(1094%) hue-rotate(5deg) brightness(86%) contrast(87%);
+    -webkit-filter: invert(61%) sepia(97%) saturate(1094%) hue-rotate(5deg) brightness(86%) contrast(87%);
+}
+
+.materials{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.material{
+    flex: 0 45%;
+    margin: 0 2.5% 1.5em;
+    text-align: center;
+}
+
+.material img{
+    width: 4.75em;
+    margin: 0 auto;
+}
+
+.material h3{
+    font-size: 0.9em;
+    font-weight: 900;
+    color: #c69210;
+    margin: 0 0 0.5em;
+}
+
+.showCase5{ 
+    width: 100%;
+    height: 60vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 65%;
+    position: relative;
+    margin-top: 5em;
+}
+
+.showCase5 p{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 12em;
+    font-size: 0.9em;
+    letter-spacing: 0.05em;
+}
+
+:focus { outline: none; }
+
+.contact{
+    width: 90%;
+    margin: 5em auto 3em;
+}
+
+.contact h2{
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.contact input{
+    background: transparent;
+    border-bottom: #c69210 solid 2px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 0.75em;
+    padding-left: 0;
+    float:left;
+    margin-bottom: 1.75em;
+    font-size: 0.8em;
+    color: black;
+    font-weight: 100;
+    width: 100%;
+}
+
+textarea{
+    margin: 1.9em 0 2em 0;
+    padding: 0.75em;
+    border: #c69210 solid 2px;
+    background: transparent;
+    font-size: 1em;
+    width: 100%;
+    color: #666666;
+    font-family: 'Lora';
+    font-weight: normal;
+}
+  
+input[type="submit"]{
+    border: #c69210 solid 2px;
+    color: #c69210;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    margin-top: 0.3em;
+    padding: 0.75em 0;
+    transition: 0.3s ease-in-out;
+    width: 9em;
+}
+  
+input[type="submit"]:hover{
+    cursor: pointer;
+    background: #C69210;
+    color: white;
+}
+
+.contact .leftSection {
+    margin-top: 2em;
+}
+
+.contact .leftSection h3 {
+    font-size: 0.9em;
+    font-weight: 900;
+    color: #c69210;
+    margin: 0 0 0.5em;
+}
+
+.contact .leftSection .email{
+    margin-top: 1.5em;
+}
+
+.contact .leftSection a{
+    text-decoration: none;
+    color: black;
+    font-weight: 100;
+}
+
+footer p{
+    font-weight: 100;
+    font-size: 0.8em;
+    line-height: 1.6em;
+    color: grey;
+    margin: 2em 0 3em 5%;
+}
+
+.showCase2, .showCase3, .showCase5{
+    max-height: 23em;
+}
+
+main .process p .largeDivider{
+    display: none;
+}
+
+.setWidth{
+    display: flex;
+    max-width: 21em;
+    margin: 0 auto;
+}
+
+.showCase6{
+    width: 95%;
+    float: right;
+    clear: both;
+    margin-bottom: 8em;
+}
+
+.showCase4{
+    clear: both;
+}
+
+.sideMenu{
+    position: fixed; 
+    height: 100vh;
+    z-index: 5; 
+    padding: 3em 5%; 
+    width: 60%;
+    margin-right: -2900px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .7s;
+}
+
+.menuList a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 100;
+    margin-bottom: .75em;
+}
+
+
+.menuContainer{
+    position: relative;
+    height: 100%;
+}
+
+.contactEmail{
+    position: absolute;
+    bottom: 0;
+}
+
+.menuList{
+    padding-top: 3em;
+}
+
+.contactEmail p{
+    font-family: 'Montserrat';
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.9em;
+    margin-bottom: 0.7em;
+}
+
+.contactEmail a{
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    font-size: 0.875em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:500px){
+    .material{
+        flex: 0 28%;
+    }
+
+    .showCase2 img, .showCase3 img, .showCase4 img:nth-child(2){
+        width: 11em;
+    }
+}
+
+@media (min-width:600px){
+    .showCase2 img, .showCase3 img, .showCase4 img:nth-child(2){
+        width: 12em;
+    }
+
+    .services{
+        margin-top: -3em;
+    }
+}
+
+@media (min-width:700px){
+    header img{
+        padding-top: 2em;
+    }
+
+    .hamburger{
+        margin-top: 2.85em;
+    }
+
+    header h1{
+        font-size: 2.25em
+    }
+
+    .services div h3{
+        margin-top: 2em;
+        font-size: 0.85em;
+    }
+
+    main h2{
+        font-size: 1em;
+    }
+
+    main .process{
+        margin: 6em auto;
+    }
+
+    main .process p{
+        font-size: 1.25em;
+        max-width: 31em;
+        line-height: 1.8em;
+    }
+
+    main .process p br{
+        display: none;
+    }
+
+    main .process p .largeDivider{
+        display: block;;
+    }
+
+    main .process, main .experience, .showCase2{
+        clear: both;
+    }
+
+    main .showCase1{
+        width: 95%;
+        float: right;
+    }
+
+    main .experience{
+        width: 61.5%;
+        margin: 0 0 7em;
+        float: right;
+        margin-right: 5%;
+    }
+
+    .quality h2{
+        text-align: left;
+    }
+
+    .quality .iconContainer .icon{
+        width: 50%;
+        float: left;
+        max-width: 5em;
+    }
+
+    .quality .iconContainer{
+        display: table-cell;
+        vertical-align: middle;
+        max-width: 10em;
+        padding-left: .75em;
+    }
+
+    .qualityTextContainer{
+        display: table-cell;
+        vertical-align: middle;
+        width: 68.5%;
+    }
+
+    .quality h3 {
+        margin-top: 0;
+    }
+
+    .quality .iconContainer img {
+        width: 85%;
+    }
+
+    .showCase3{
+        width: 45%;
+        max-height: 20em;
+        float: left;
+        margin-top: 0;
+        background-position: 100%;
+    }
+
+    .showCase3 img{
+        bottom: -10em;
+    }
+
+    .howItWorks{
+        float: right;
+        margin-top: 0;
+        width: 44%;
+        margin-right: 5%;
+        margin-bottom: 5em;
+    }
+
+    .showCase4{
+        clear: both;
+        width: 95%;
+        max-width: 45em;
+    }
+
+    .showCase6{
+        width: 55%;
+    }
+
+    .showCase5 p{
+        font-size: 1em;
+    }
+
+    .contact input{
+        width: 50%;
+    }
+
+    .conatct h2{
+        margin-bottom: 1.75em;
+    }
+
+    .contact input{
+        width: 47.5%;
+    }
+
+    .contact input:nth-child(odd){
+        margin-right: 5%;
+    }
+
+    .showCase4 img:nth-child(1){
+        padding-top: 3em;
+    }
+
+    .material h3{
+        margin: 0.5em 0 0.75em;
+    }
+
+    .setWidth{
+        display: block;
+        max-width: none;
+        margin: 0;
+    }
+
+    .menuList{
+        padding-top: 4em;
+        font-size: 1.25em;
+    }
+
+    .sideMenu{
+        right: 0;
+        width: 75%;
+    }
+}
+
+@media (min-width:768px){
+    .services {
+        margin-top: -4em;
+    }
+
+    .showCase2 img, .showCase3 img, .showCase4 img:nth-child(2) {
+        width: 13em;
+    }
+
+    .showCase3 img {
+        bottom: -12em;
+    }
+
+    .howItWorks{
+        margin-bottom: 4em;
+        width: 43%;
+    }
+
+    .quality .iconContainer .icon{
+        max-width: 5.5em;
+    }
+
+    .quality .iconContainer{
+        padding-left: .25em;
+    }
+
+}
+
+@media (min-width:800px){
+    .contact h2{
+        text-align: left;
+    }
+
+    .material {
+        flex: 1;
+    }
+
+    .materials .material:nth-child(1) {
+        margin-left: 0;
+    }
+
+    .materials .material:nth-child(5){
+        margin-right: 0;
+    }
+
+    .contact form{
+        width: 68.5%;
+        margin-right: 0;
+        float: right;
+    }
+
+    .contact{
+        overflow: auto;
+    }
+
+    .showCase5 p {
+        font-size: 1.25em;
+    }
+    .quality .iconContainer .setWidth {
+        max-width: 100%;
+        display: block;
+        overflow: unset;
+    }
+
+
+}
+
+@media (min-width:900px){
+    .textBlocks{
+        position: relative;
+    }
+
+    .quality .qualityTextContainer .textBlocks img{
+        display: block;
+        width: 3em;
+        position: absolute;
+        top: -1em;
+        left: -3.25em;
+        display: block;
+    }
+
+    .iconContainer .setWidth{
+        overflow: auto;
+        max-width: 11em;
+    }
+
+    .showCase4{
+        max-width: 48em;
+    }
+
+    main p {
+        font-size: 0.85em;
+        line-height: 1.7em;
+    }
+
+    footer p{
+        font-size: 13px;
+    }
+}
+
+@media (min-width:1000px){
+    .services, .materialsContainer, .contact{
+        width: 80%;
+    }
+
+    .services{
+        margin-top: -5em;
+    }
+
+    .services div{
+        margin: 5%;
+    }
+
+    .services .woven{
+        margin-left: 0;
+    }
+
+    .services .knitware{
+        margin-right: 0;
+    }
+
+    .quality{
+        width: 80%;
+    }
+
+    main .showCase1{
+        width: 90%;
+    }
+
+    main .experience{
+        width: 53%;
+        margin-right: 10%;
+    }
+
+    .qualityTextContainer{
+        width: 65.5%;
+    }
+
+    .showCase3{
+        width: 46.5%;
+        max-height: 22em;
+    }
+
+    .showCase6 {
+        width: 46%;
+    }
+
+    .howItWorks{
+        width: 36%;
+        margin-right: 10%;
+        margin-bottom: 8em;
+    }
+
+    .showCase4{
+        max-width: 52em;
+    }
+
+    .qualityTextContainer{
+        width: 66.25%;
+    }
+
+    .showCase2, .showCase3, .showCase5{
+        max-height: 28em;
+    }
+
+    .showCase2 img, .showCase3 img, .showCase4 img:nth-child(2) {
+        width: 15em;
+    }
+
+    .contact form{
+        width: 66.25%;
+    }
+
+    .showCase4 img:nth-child(2){
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .showCase4 img:nth-child(1){
+        padding-top: 0;
+    }
+
+    .sideMenu{
+        width: 60%;
+    }
+}
+
+@media (min-width:1100px){
+    .hamburger {
+        margin-top: 4.25em;
+    }
+
+    main .process {
+        margin: 6em auto 8em;
+    }
+
+    header img {
+        width: 14em;
+        padding-top: 3em;
+    }
+
+    header{
+        height: 42em;
+    }
+
+    header h1 {
+        font-size: 2.75em;
+    }
+
+    .services div h3{
+        font-size: 0.95em;
+    }
+
+    main h2{
+        font-size: 1.2em;
+    }
+
+    main .process p{
+        font-size: 1.5em;
+    }
+
+    main p{
+        font-size: 0.9em;
+    }
+
+    main .experience{    
+        margin-bottom: 9em;
+    }
+
+    .showCase2 img, .showCase3 img, .showCase4 img:nth-child(2){
+        width: 16em;
+    }
+
+    .quality {
+        margin: 7em auto;
+    }
+
+    .iconContainer .setWidth{
+        max-width: 14em;
+    }
+
+    .quality .iconContainer img {
+        width: 100%;
+    }
+
+    .quality .iconContainer {
+        padding-left: 1em;
+    }
+
+    .quality .qualityTextContainer .textBlocks svg{
+        width: 3.75em;
+        top: -1.5em;
+        left: -4em;
+    }
+
+    .showCase3 img {
+        bottom: -15em;
+    }
+
+    .showCase4{
+        width: 95%;
+    }
+
+    .showCase2, .showCase3, .showCase5 {
+        max-height: 30em;
+    }
+
+    .contact h2{
+        margin-bottom: 2.5em;
+    }
+
+    .materialsContainer h2 {
+        margin-bottom: 2em;
+    }
+
+    .quality .iconContainer .icon {
+        max-width: 5em;
+        margin: 0.25em 0.5em;
+    }
+
+    .showCase4 {
+        max-width: 60em;
+        margin-bottom: 7em;
+    }
+
+    .qualityTextContainer {
+        width: 60.25%;
+    }
+
+    .quality h3, .material h3,  .contact .leftSection h3{
+        font-size: 1em;
+    }    
+
+    .showCase5{
+        margin-top: 7em;
+    }
+
+    .contact{   
+        margin: 7em auto 5em;
+    }
+
+    footer p{
+        font-size: 14px !important;
+        margin-bottom: 3em;
+    }
+
+    .showCase5 p {
+        font-size: 1.5em;
+    }
+
+    .contact input{
+        font-size: 0.9em;
+    }
+
+    .material img {
+        width: 5em;
+    }
+
+    .howItWorks .steps .step{
+        font-size: 1.5em;
+        margin-right: 1.25em;
+    }
+
+    .howItWorks .steps{
+        margin-bottom: 2em;
+    }
+}
+
+@media (min-width:1200px){
+    .services {
+        margin-top: -6em;
+    }
+
+    .quality .iconContainer .icon {
+        margin: .5em 1em;
+    }
+
+    .quality .iconContainer {
+        padding-left: 0;
+    }
+
+    footer p {
+        font-size: 15px !important;
+    }
+}
+
+@media (min-width:1300px){
+    header {
+        height: 45em;
+    }
+
+    header h1 {
+        font-size: 3.25em;
+    }
+
+    .services {
+        margin-top: -7em;
+    }
+
+    .services, .materialsContainer, .contact, .quality {
+        width: 75%;
+    }
+
+    .services div h3 {
+        font-size: 1em;
+    }
+
+    main h2 {
+        font-size: 1.4em;
+    }
+
+    main .process p {
+        font-size: 1.75em;
+    }
+
+    main .showCase1 {
+        width: 87.5%;
+    }
+
+    .showCase1 img:nth-child(2){
+        width: 65%;
+    }
+
+    main p,  .contact input{
+        font-size: 0.925em;
+        line-height: 1.9em;
+    }
+
+    textarea{
+        padding: 1em;
+    }
+
+    main .experience {
+        width: 44.3%;
+        margin-right: 12.5%;
+    }
+
+    .showCase1{
+        margin-bottom: 4em;
+    }
+
+    .showCase2, .showCase3, .showCase5 {
+        max-height: 32em;
+    }
+
+    .showCase2 img, .showCase3 img, .showCase4 img:nth-child(2) {
+        width: 18em;
+    }
+
+    .quality h3, .material h3, .contact .leftSection h3 {
+        font-size: 1.25em;
+    }
+    .quality .qualityTextContainer .textBlocks svg {
+        width: 5em;
+        left: -5.5em;
+        top: -2em;
+        position: absolute;
+        display: block;
+    }
+    .iconContainer .setWidth{
+        max-width: 16em;
+    }
+
+    .quality .iconContainer .icon {
+        max-width: 6em;
+        margin: .5em 0 .5em 1em;
+    }
+
+    .qualityTextContainer {
+        width: 59.25%;
+    }
+
+    .howItWorks{
+        margin-right: 12.5%;
+        width: 33.9%;
+    }
+
+    .howItWorks h2, .howItWorks .steps {
+        margin-bottom: 2.25em;
+    }
+
+    .showCase3 img {
+        bottom: -19em;
+    }
+
+    .howItWorks .steps .step {
+        font-size: 1.75em;
+        margin-right: 1.5em;
+        line-height: 1.3em;
+    }
+
+    .showCase4 img:nth-child(1) {
+        width: 85%;
+    }
+
+    .showCase4 img:nth-child(2){
+        right: -3em;
+    }
+
+    .material img {
+        width: 6em;
+    }
+
+    .showCase5 p {
+        font-size: 1.75em;
+    }
+
+    .contact form {
+        width: 59.25%;
+    }
+
+    .showCase4{
+        margin-bottom: 9em;
+    }
+
+    .showCase5{
+        margin-top: 9em;
+    }
+
+    .contact{
+        margin-top: 9em;
+    }
+
+    .materialsContainer h2 {
+        margin-bottom: 2.5em;
+    }
+
+    .quality .iconContainer{
+        padding-left: .5em;
+    }
+
+    .showCase6 {
+        width: 46.5%;
+        margin-bottom: 11em;
+    }
+}
+
+@media (min-width:1400px){
+    .services, .materialsContainer, .contact, .quality {
+        width: 70%;
+    }
+
+    main .process{
+        margin-bottom: 9em;
+    }
+
+    main .showCase1 {
+        width: 85%;
+    }
+
+    main .experience {
+        width: 42.8%;
+    }
+
+    .showCase2 img{
+        width: 20em;
+        top: -5em;
+    }
+
+    .qualityTextContainer {
+        width: 57.5%;
+    }    
+
+    .quality .iconContainer .icon{
+        margin: .5em 1em .5em .75em;
+    }
+
+    .showCase4 img:nth-child(2) {
+        right: -7em;
+    }
+
+    .howItWorks {
+        margin-right: 15%;
+        width: 31.5%;
+    }
+
+    .contact form {
+        width: 57.5%;
+    }
+
+    .menuList a{
+        margin-bottom: 1em;
+    }
+}
+
+@media (min-width:1500px){
+    .menuList {
+        padding-top: 6em;
+    }
+
+    .contactEmail{
+        bottom: 1em;
+    }
+
+    header {
+        height: 52em;
+    }
+
+    main p, .contact input {
+        font-size: 0.95em;
+    }
+
+    .hamburger {
+        margin-top: 5.25em;
+    }
+
+    header img {
+        padding-top: 4em;
+    }
+
+    main h2 {
+        font-size: 1.5em;
+    }
+
+    .services div h3 {
+        font-size: 1.1em;
+    }
+
+    main .process p {
+        font-size: 1.85em;
+    }
+
+    .services, .materialsContainer, .contact, .quality{
+        width: 65%;
+    }
+
+    main .showCase1 {
+        width: 82.5%;
+    }
+
+    main .experience {
+        width: 36.1%;
+        margin-right: 17.5%;
+    }
+
+    .qualityTextContainer {
+        width: 55.7%;
+    }
+
+    .quality .iconContainer {
+        padding-left: 1.25em;
+    }
+
+    .howItWorks {
+        margin-right: 17.5%;
+        width: 29.3%;
+    }
+
+    .showCase3 {
+        width: 46.6%;
+    }
+
+    .contact form {
+        width: 55.7%;
+    }
+
+    .showCase2, .showCase3, .showCase5 {
+        max-height: 38em;
+    }
+
+    .showCase2 img {
+        width: 22em;
+    }
+
+    main .experience {
+        margin-bottom: 11em;
+    }    
+
+    .quality {
+        margin: 8em auto;
+    }
+
+    .howItWorks {
+        margin-bottom: 10em;
+    }
+
+    .showCase4 {
+        max-width: 65em;
+        margin-bottom: 10em;
+    }
+
+    .showCase2 img, .showCase3 img, .showCase4 img:nth-child(2) {
+        width: 20em;
+    }
+
+    .showCase5 {
+        margin-top: 10em;
+    }
+
+    main h2 {
+        font-size: 1.75em;
+    }
+
+    .showCase6 {
+        width: 46.8%;
+    }
+
+
+    .showCase6 {
+        margin-bottom: 12em;
+    }
+}
+
+@media (min-width:1600px){
+    .menuList a{
+        font-size: 1.75em;
+    }
+
+    body{
+        font-size: 1.05em;
+    }
+
+    .showCase2 img{
+        width: 23em;
+    }
+    
+    header h1 {
+        font-size: 3.5em;
+    }
+
+    .showCase4 {
+        max-width: 70em;
+    }
+
+    main .experience {
+        width: 35.8%;
+    }
+    
+    .showCase1 img:nth-child(2) {
+        width: 64.6%;
+    }
+
+    .qualityTextContainer, .contact form  {
+        width: 55.1%;
+    }
+
+    .howItWorks .steps .step{
+        font-size: 2em;
+        margin-right: 1.75em;
+    }
+
+    .howItWorks h2, .howItWorks .steps{
+        margin-bottom: 2.75em;
+    }
+
+    .iconContainer .setWidth {
+        max-width: 17em;
+    }
+
+    .quality .iconContainer .icon {
+        max-width: 6.5em;
+    }
+
+    .quality .iconContainer {
+        padding-left: 2.25em;
+    }
+
+    .material img {
+        width: 6.5em;
+    }
+}
+
+@media (min-width:1900px){
+    .showCase4 img:nth-child(1) {
+        width: 86%;
+    }
+}
+
+
+
+.qualityPointsContainer .iconContainer {
+    min-width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+.qualityPointsContainer .iconContainer .setWidth {
+    max-width: 100%;
+    min-width: 100%;
+    display: flex;
+}
+.quality .iconContainer {
+    max-width: 100%;
+}
+
+.quality .iconContainer .setWidth {
+    max-width: 100%;
+    display: flex;
+    overflow: unset;
+}
+
+.quality .iconContainer .setWidth ul#myTab {
+    border: none;
+    max-width: 300px;
+    display: flex;
+}
+
+.quality .iconContainer .setWidth ul#myTab li a {
+    padding: 0;
+    border: none;
+    margin: 0;
+    display: block;
+    width: max-content;
+    text-align: center;
+    margin-right: 50px;
+}
+
+.quality .iconContainer .setWidth ul#myTab li a svg {
+    width: 100px;
+}
+.quality .iconContainer .setWidth div#myTabContent {
+    width: 100%;
+    padding-left: 115px;
+    padding-top: 40px;
+} 
+nav.sideMenu.is_active {
+    margin-right: 0;
+    background: #15294a; 
+    opacity: 1;
+    visibility: visible;
+}
+
+.menuList a{
+    transition: 1s;
+    margin-left:100px;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+}
+nav.sideMenu.is_active .menuList a:first-child{
+    margin-left: 0px;
+    transition-delay: .2s;
+    opacity: 1;
+    visibility: visible;
+}
+nav.sideMenu.is_active .menuList a:nth-last-child(5){
+    margin-left: 0px;
+    transition-delay: .4s;
+    opacity: 1;
+    visibility: visible;
+}
+nav.sideMenu.is_active .menuList a:nth-last-child(4){
+    margin-left: 0px;
+    transition-delay: .6s;
+    opacity: 1;
+    visibility: visible;
+} 
+nav.sideMenu.is_active .menuList a:nth-last-child(3){
+    margin-left: 0px;
+    transition-delay: .8s;
+    opacity: 1;
+    visibility: visible;
+} 
+ 
+nav.sideMenu.is_active .menuList a:nth-last-child(2){
+    margin-left: 0px;
+    transition-delay: 1s;
+    opacity: 1;
+    visibility: visible;
+}
+ 
+nav.sideMenu.is_active .menuList a:last-child{
+    margin-left: 0px;
+    transition-delay: 1.2s;
+    opacity: 1;
+    visibility: visible;
+}
+.contactEmail{
+    transition: 1s;
+    margin-left:100px;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+}
+nav.sideMenu.is_active .contactEmail{
+    margin-left: 0px;
+    transition-delay: 1.5s;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+header.sticky span.line {
+    background: #838FA0;
+}
+.quality .iconContainer .setWidth ul#myTab li a svg {
+    width: 100px; 
+    transition: .3s;
+    filter: grayscale(1);
+}
+.quality .iconContainer .setWidth ul#myTab li a.active svg {
+    filter: grayscale(0);
+.quality .iconContainer .setWidth ul#myTab li a.active svg path{
+    fill: #c69210;
+}
+
+
+
+
+@media (max-width:800px){ 
+    .quality .iconContainer .setWidth {
+        max-width: 100%;
+        display: block;
+        overflow: unset;
+    }
+    .sideMenu {
+        width: 100%; 
+    }
+    .quality .iconContainer .setWidth ul#myTab {
+        border: none;
+        display: flex;
+        width: 100%;
+        max-width: 100%;
+        justify-content: center;
+    }
+    .quality .iconContainer .setWidth ul#myTab li a { 
+        margin-right: 20px;
+        margin-left: 10px;
+    }
+    .quality .iconContainer .setWidth div#myTabContent {
+        width: 100%;
+        padding-left: 0px;
+        padding-top: 20px;
+    }
+    textarea {  
+        height: 150px;
+    }
+
+
+
+}
+
